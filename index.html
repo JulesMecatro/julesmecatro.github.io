@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Ingénierie</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    link
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Portefolio - Jules Biron</div>
+            <div class="logo">Portfolio - Jules Biron</div>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
@@ -23,7 +22,7 @@
     <section id="accueil" class="hero">
         <div class="container">
             <h1>Étudiant en Ingénierie Innovation Mécatronique</h1>
-            <p>Conception, développement et optimisation de projets à initiatives personelle ou sous solicitations exterieurs.</p>
+            <p>Conception, développement et optimisation de projets à initiatives personnelles ou sous sollicitations extérieures.</p>
             <a href="#projets" class="cta-button">Voir mes projets à la une</a>
         </div>
     </section>
@@ -34,7 +33,10 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Expertise technique</h3>
-                    <p>Jeune, ambitieux et absolument passioné par l'innovation technologique je me suis lancé dans une quête d'expertise en ingénierie mécatronique. Je combine rigueur analytique et créativité pour transformer des défis techniques et autres idées farfelus en opportunités d'innovation et d'apprentissage.</p>
+                    <p>Jeune, ambitieux et absolument passionné par l'innovation technologique, je me suis lancé dans une quête d'expertise en ingénierie mécatronique. Je combine rigueur analytique et créativité pour transformer des défis techniques et autres idées farfelues en opportunités d'innovation et d'apprentissage.</p>
+                <div class="project-cta">
+                    <a href="#" class="project-button">Découvrir mon parcours</a>
+                </div>
                 </div>
                 <div class="skills">
                     <div class="skill-item">
@@ -46,7 +48,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">Visuels et Animation</div>
-                        <p class="skill-desc">Blender</p>
+                        <p class="skill-desc">Blender, Photoshop</p>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 55%"></div>
                         </div>
@@ -75,75 +77,76 @@
             <h2 class="section-title">Projets à la une</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">⚙️</div>
+                    <div class="project-image">
+                        <img src="assets/img/GROM.png" alt="G.R.O.M.">
+                    </div>
                     <div class="project-content">
-                        <h3>Système automatisé</h3>
-                        <p>Conception d'un système d'automatisation industrielle optimisant la productivité de 35%.</p>
+                        <a href="projects/grom.html" class="project-link"><h3>G.R.O.M. <span class="project-status status-progress">En cours</span></h3></a>
+                        <p>Projet de réalisation d'un robot marcheur à 4 pattes animé par un Raspberry pi 4.</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">PLC</span>
-                            <span class="tech-tag">SCADA</span>
-                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">CAO/DAO</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Electronique</span>
+                            <span class="tech-tag">Impression 3D</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">🔧</div>
+                    <div class="project-image">
+                        <img src="assets/img/dassault-logo.jpg" alt="Dassault Aviation">
+                    </div>
                     <div class="project-content">
-                        <h3>Optimisation énergétique</h3>
-                        <p>Étude et amélioration de l'efficacité énergétique d'une installation industrielle.</p>
+                        <a href="projects/dassault.html" class="project-link"><h3>Dassault UAV Challenge <span class="project-status status-progress">En cours</span></h3></a>
+                        <p>Conception d'un drone "VTOL" pour la compétition Dassault UAV Challenge.</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">Thermique</span>
-                            <span class="tech-tag">CFD</span>
-                            <span class="tech-tag">Audit</span>
+                            <span class="tech-tag">CAO/DAO</span>
+                            <span class="tech-tag">Electronique</span>
+                            <span class="tech-tag">Simulation</span>
+                            <span class="tech-tag">Pilotage Drone</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">🏗️</div>
+                    <div class="project-image">
+                        <img src="assets/img/Pub_Pro_2.png" alt="Logo Makito">
+                    </div>
                     <div class="project-content">
-                        <h3>Structure innovante</h3>
-                        <p>Développement d'une structure allégée avec analyse par éléments finis.</p>
+                        <a href="projects/makito.html" class="project-link"><h3>Makito <span class="project-status status-done">Terminé</span></h3></a>
+                        <p>Projet ESTIA : réalisation d'un outil éléctro-portatif & rendus réaliste</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">CAO 3D</span>
-                            <span class="tech-tag">FEM</span>
-                            <span class="tech-tag">Matériaux</span>
+                            <span class="tech-tag">CAO/DAO</span>
+                            <span class="tech-tag">Blender</span>
+                            <span class="tech-tag">Photoshop</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="project-cta">
+            <a href="#projets" class="project-button">Voir tous mes projets</a>
+        </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
             <div class="contact-content">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Envoyer</button>
-                </form>
+                <h2 class="section-title">Contact</h2>
+                <h3>LinkedIn : <span><a href="https://www.linkedin.com/in/jules-biron-aa5289228" target="_blank">Jules Biron</a></span></h3>
+                <h3>Email : <span><a href="mailto:jules.biron@etu.estia.fr">jules.biron@etu.estia.fr</a></span></h3>
+                <h3>Téléphone : <span>06 36 49 87 20</span></h3>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Portfolio Ingénierie. Tous droits réservés.</p>
+            <p>&copy; 2026 Portfolio Jules Biron. Tous droits réservés.</p>
         </div>
     </footer>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
