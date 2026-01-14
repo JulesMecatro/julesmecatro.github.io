@@ -4,318 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Ingénierie</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e40af;
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --gray: #64748b;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background: var(--light);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header & Navigation */
-        header {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        /* Hero Section */
-        .hero {
-            margin-top: 80px;
-            padding: 100px 0;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 12px 30px;
-            background: white;
-            color: var(--primary);
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-        }
-
-        /* Sections */
-        section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: var(--dark);
-        }
-
-        /* About Section */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .about-text h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .about-text p {
-            color: var(--gray);
-            margin-bottom: 1rem;
-        }
-
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-        }
-
-        .skill-item {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .skill-name {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .skill-bar {
-            background: #e2e8f0;
-            height: 8px;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .skill-progress {
-            background: var(--primary);
-            height: 100%;
-            border-radius: 4px;
-            transition: width 1s ease;
-        }
-
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .project-image {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-        }
-
-        .project-content {
-            padding: 1.5rem;
-        }
-
-        .project-content h3 {
-            color: var(--dark);
-            margin-bottom: 0.5rem;
-        }
-
-        .project-content p {
-            color: var(--gray);
-            margin-bottom: 1rem;
-        }
-
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .tech-tag {
-            background: var(--light);
-            color: var(--primary);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-        }
-
-        /* Contact Section */
-        .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            padding: 0.8rem;
-            border: 2px solid #e2e8f0;
-            border-radius: 5px;
-            font-family: inherit;
-            transition: border-color 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-
-        .submit-btn {
-            background: var(--primary);
-            color: white;
-            padding: 1rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .submit-btn:hover {
-            background: var(--secondary);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--dark);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                gap: 1rem;
-            }
-
-            .skills {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    link
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Ingénieur</div>
+            <div class="logo">Portefolio - Jules Biron</div>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
-                <li><a href="#projets">Projets</a></li>
+                <li><a href="#projets">Projets à la une</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -323,9 +22,9 @@
 
     <section id="accueil" class="hero">
         <div class="container">
-            <h1>Ingénieur en Innovation</h1>
-            <p>Conception, développement et optimisation de solutions techniques</p>
-            <a href="#projets" class="cta-button">Voir mes projets</a>
+            <h1>Étudiant en Ingénierie Innovation Mécatronique</h1>
+            <p>Conception, développement et optimisation de projets à initiatives personelle ou sous solicitations exterieurs.</p>
+            <a href="#projets" class="cta-button">Voir mes projets à la une</a>
         </div>
     </section>
 
@@ -335,30 +34,33 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Expertise technique</h3>
-                    <p>Ingénieur passionné par l'innovation technologique et la résolution de problèmes complexes. Mon expertise couvre la conception de systèmes, l'optimisation de processus et le développement de solutions sur mesure.</p>
-                    <p>Je combine rigueur analytique et créativité pour transformer des défis techniques en opportunités d'innovation.</p>
+                    <p>Jeune, ambitieux et absolument passioné par l'innovation technologique je me suis lancé dans une quête d'expertise en ingénierie mécatronique. Je combine rigueur analytique et créativité pour transformer des défis techniques et autres idées farfelus en opportunités d'innovation et d'apprentissage.</p>
                 </div>
                 <div class="skills">
                     <div class="skill-item">
                         <div class="skill-name">CAO/DAO</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Simulation</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Automatisation</div>
+                        <p class="skill-desc">OnShape, SolidWorks, Blender</p>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 80%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">Gestion de projet</div>
+                        <div class="skill-name">Visuels et Animation</div>
+                        <p class="skill-desc">Blender</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 55%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Développement</div>
+                        <p class="skill-desc">Python, C++, JavaScript, HTML, CSS...</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Recherche et Développement</div>
+                        <p class="skill-desc">Modélisation, prototypage</p>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 88%"></div>
                         </div>
@@ -370,7 +72,7 @@
 
     <section id="projets" style="background: white;">
         <div class="container">
-            <h2 class="section-title">Projets</h2>
+            <h2 class="section-title">Projets à la une</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">⚙️</div>
@@ -442,42 +144,6 @@
             <p>&copy; 2026 Portfolio Ingénierie. Tous droits réservés.</p>
         </div>
     </footer>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Message envoyé avec succès !');
-            this.reset();
-        });
-
-        // Animate skills on scroll
-        const skillObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const progressBars = entry.target.querySelectorAll('.skill-progress');
-                    progressBars.forEach(bar => {
-                        bar.style.width = bar.style.width;
-                    });
-                }
-            });
-        });
-
-        const skillsSection = document.querySelector('.skills');
-        if (skillsSection) {
-            skillObserver.observe(skillsSection);
-        }
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
