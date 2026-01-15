@@ -205,6 +205,15 @@ section {
     transform: translateY(-10px);
 }
 
+.project-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-title {
+    text-decoration: underline;
+}
 .project-image {
     width: 100%;
     height: 200px;
