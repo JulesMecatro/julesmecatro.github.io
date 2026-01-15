@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Zalando Sans SemiExpanded", sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--dark);
     background: var(--light);
@@ -366,6 +368,60 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem 0;
+}
+
+.container-full {
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+}
+
+.container-full .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+/* Layout trois colonnes pour les compétences */
+.competences-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 3rem;
+    padding: 0 2rem;
+}
+
+.competences-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.competences-column-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.competences-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .competences-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .competences-column-center {
+        order: -1;
+    }
 }
 
 /* Responsive */
