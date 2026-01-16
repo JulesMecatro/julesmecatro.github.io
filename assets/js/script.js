@@ -31,7 +31,7 @@ if (skillsSection) {
         const competencesImage = document.getElementById('competences-image');
         const projectCards = document.querySelectorAll('#competences .project-card');
         const competencesColumns = document.querySelectorAll('.competences-column');
-        const defaultImage = '../assets/img/Rendu_2_reduced.png';
+        const defaultImage = '../assets/img/Rendu_2_reduced.jpg';
         let lastHoveredImage = null;
         
         if (competencesImage && projectCards.length > 0) {
