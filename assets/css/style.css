@@ -394,6 +394,10 @@ footer {
     padding: 0 2rem;
 }
 
+#competences .container-full {
+    height: 700px;
+}
+
 /* Layout trois colonnes pour les compétences */
 .competences-layout {
     display: grid;
