@@ -792,6 +792,7 @@ footer {
     
     .logo {
         text-align: center;
+        padding-right: 50px;
         flex: 1;
     }
     
