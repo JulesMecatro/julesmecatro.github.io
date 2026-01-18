@@ -193,7 +193,7 @@ nav {
     color: var(--text-primary);
     text-align: center;
     position: relative;
-    margin-top: 60px;
+    margin-top: 38.4px;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -801,7 +801,7 @@ footer {
     
     .nav-links {
         position: fixed;
-        top: 70px;
+        top: 38.4px;
         right: -100%;
         width: 250px;
         height: calc(100vh - 70px);
