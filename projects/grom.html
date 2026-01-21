@@ -101,11 +101,167 @@
         </div>
     </section>
     <section id="conception">
-        <div class="container-full">
-            <h2 class="section-title">Conception et Réalisation</h2>
-            <div class="conception">
-
+        <div class="container">
+            <h2 class="section-title">CONCEPTION</h2>
+            <p class="section-subtitle">Notre démarche</p>
+            
+            <div class="rapport-grid">
+                <div class="rapport-item">
+                    <div class="rapport-text">
+                        <h3>Conception itérative</h3>
+                        <p>La conception du châssis et des sous-ensembles mécaniques de G.R.O.M. a été réalisée de manière itérative sous CAO. Chaque itération permet de tester différentes géométries, d'améliorer la rigidité, de réduire la masse et de faciliter l'intégration des composants, en tenant compte des contraintes de fabrication et d'assemblage.</p>
+                    </div>
+                    <div class="rapport-image">
+                        <a href="#">
+                            <img src="../assets/img/chassi_1.jpg" alt="Conception itérative">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="rapport-item rapport-item-reverse">
+                    <div class="rapport-image">
+                        <a href="#">
+                            <img src="../assets/img/chassi_2.jpg" alt="Architecture mécanique">
+                        </a>
+                    </div>
+                    <div class="rapport-text">
+                        <h3>Architecture mécanique</h3>
+                        <p>La structure de G.R.O.M. a été pensée autour d'une architecture modulaire permettant de dissocier le châssis central et les sous-ensembles de locomotion. Cette organisation facilite l'assemblage, la maintenance et les évolutions futures, tout en garantissant une répartition homogène des masses et une bonne rigidité.</p>
+                    </div>
+                </div>
+                
+                <div class="rapport-item">
+                    <div class="rapport-text">
+                        <h3>Intégration des composants</h3>
+                        <p>La conception du châssis a été guidée par l'intégration des composants mécaniques et électroniques dès les premières phases de CAO. Les volumes, interfaces de fixation et passages de câbles ont été définis afin de garantir un assemblage cohérent, limiter les contraintes sur les composants et faciliter les phases de montage et de maintenance.</p>
+                    </div>
+                    <div class="rapport-image">
+                        <a href="#">
+                            <img src="../assets/img/chassi_3.jpg" alt="Intégration des composants">
+                        </a>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section id="electronique">
+        <div class="container">
+            <h2 class="section-title">ÉLECTRONIQUE</h2>
+            <p class="section-subtitle">Notre démarche</p>
+            
+            <div class="rapport-grid">
+                <div class="rapport-item">
+                    <div class="rapport-text">
+                        <h3>Architecture électronique</h3>
+                        <p>L'architecture électronique de G.R.O.M. repose sur une organisation claire des fonctions de commande, de puissance et de communication. Les composants ont été sélectionnés afin d'assurer une compatibilité fiable entre l'unité de calcul, les modules de commande des actionneurs et l'alimentation, tout en conservant une structure évolutive et facilement diagnosticable.</p>
+                    </div>
+                    <div class="rapport-image">
+                        <a href="#">
+                            <img src="../assets/img/Elec.jpg" alt="Architecture électronique">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="rapport-item rapport-item-reverse">
+                    <div class="rapport-image">
+                        <a href="#">
+                            <img src="../assets/img/ubec-lm.png" alt="Stabilité du système">
+                        </a>
+                    </div>
+                    <div class="rapport-text">
+                        <h3>Stabilité du système</h3>
+                        <p>Afin de limiter les interférences générées par les servomoteurs, l'architecture d'alimentation intègre un UBEC ainsi qu'un module de réduction de tension dédié au Raspberry Pi. Cette séparation assure une alimentation stable, protège l'unité de calcul des impulsions de courant et des chutes de tension, et améliore la fiabilité globale du système.</p>
+                    </div>
+                </div>
+                
+                <div class="rapport-item">
+                    <div class="rapport-text">
+                        <h3>Sécurité et alimentation</h3>
+                        <p>L'alimentation du système est assurée par une batterie LiPo, choisie selon un compromis entre autonomie, masse et encombrement. Un dispositif de protection par fusible a été intégré afin de sécuriser l'électronique contre les surintensités et les défauts de câblage. Ces choix permettent de garantir un fonctionnement sûr tout en maintenant des performances adaptées aux contraintes du robot.</p>
+                    </div>
+                    <div class="rapport-image">
+                        <a href="#">
+                            <img src="../assets/img/fusible.jpg" alt="Sécurité et alimentation">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programmation">
+        <div class="container">
+            <h2 class="section-title">PROGRAMMATION</h2>
+            <p class="section-subtitle">Notre démarche</p>
+            
+            <div class="rapport-grid">
+                <div class="rapport-item">
+                    <div class="rapport-text">
+                        <h3>Architecture logicielle</h3>
+                        <p>Le logiciel de G.R.O.M. repose sur une architecture modulaire visant à séparer la gestion des actionneurs, la logique de contrôle et les fonctions de sauvegarde. Cette organisation améliore la lisibilité du code et facilite les évolutions du système.</p>
+                    </div>
+                    <div class="rapport-image">
+                        <a href="#">
+                            <img src="../assets/img/py.png" alt="Architecture logicielle">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="rapport-item rapport-item-reverse">
+                    <div class="rapport-image">
+                        <a href="#">
+                            <img src="../assets/img/schéma.png" alt="Contrôle des actionneurs">
+                        </a>
+                    </div>
+                    <div class="rapport-text">
+                        <h3>Contrôle des actionneurs</h3>
+                        <p>Le pilotage des servomoteurs est assuré par des fonctions dédiées permettant un contrôle précis des positions et des mouvements synchronisés. Des profils de déplacement progressifs sont utilisés afin d'améliorer la fluidité des mouvements et de limiter les contraintes mécaniques.</p>
+                    </div>
+                </div>
+                
+                <div class="rapport-item">
+                    <div class="rapport-text">
+                        <h3>Connectivité et interfaces</h3>
+                        <p>Le système intègre une connectivité sans fil permettant le développement, le déploiement et le pilotage du robot à distance. L'utilisation d'une manette de type PlayStation 5 offre une interface de contrôle intuitive pour les phases de test et de démonstration, tout en conservant une architecture logicielle flexible et évolutive.</p>
+                    </div>
+                    <div class="rapport-image">
+                        <a href="#">
+                            <img src="../assets/img/ps5.jpg" alt="Connectivité et interfaces">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <div class="container">
+            <h2 class="section-title">Conclusion</h2>
+            <p class="section-subtitle">Ce que je retiens de ce projet</p>
+            <p class="intro-text">
+                Le projet G.R.O.M. a représenté bien plus qu'un simple exercice technique : il a été une véritable école de l'ingénierie appliquée. À travers ce robot marcheur, j'ai pu confronter mes connaissances théoriques aux réalités du terrain, développant ainsi une approche pragmatique de la résolution de problèmes.
+            </p>
+            <p class="intro-text">
+                La dimension pluridisciplinaire du projet m'a permis de développer une vision globale de la conception d'un système mécatronique. De la modélisation CAO à l'écriture du code en passant par l'intégration électronique, chaque étape m'a enseigné l'importance de la cohérence entre les différentes disciplines et de l'anticipation des contraintes d'intégration.
+            </p>
+            <p class="intro-text">
+                Au-delà des compétences techniques, ce projet m'a appris la valeur de l'itération et de l'expérimentation. Chaque échec a été une opportunité d'apprentissage, chaque prototype une étape vers une solution plus aboutie. Cette démarche m'a permis de développer ma capacité d'adaptation et ma persévérance face aux obstacles techniques.
+            </p>
+            <p class="intro-text">
+                La collaboration avec Marco a également été enrichissante, me permettant d'affiner mes compétences en travail d'équipe et en communication technique. Partager les responsabilités, confronter nos idées et progresser ensemble ont été des aspects essentiels de cette expérience.
+            </p>
+            <p class="intro-text">
+                G.R.O.M. incarne aujourd'hui ma philosophie d'apprentissage : apprendre par la pratique, accepter l'échec comme partie intégrante du processus créatif, et toujours viser l'amélioration continue. Ce projet a renforcé ma conviction que l'innovation naît de la curiosité, de la rigueur et de la passion pour la technique.
+            </p>
+            <h2 class="section-title">Avenir</h2>
+            <p class="section-subtitle">Et maintenant ?</p>
+            <p class="intro-text">
+                Malgrès le fait que l'idée était simplement de s'occupé et d'apprendre de nouvelles choses, 
+                ce projet est actuellement en train de s'envoler vers un tout autre horizon. Au moment où j'écris cet article, (21/01/2026), nous sommes 
+                en train de travailler sur notre participation au concours "Mon Projet en 5minutes". <br/>
+                Aussi, nous envisageons de donner une suite à G.R.O.M. en poursuivant une potentiel oportunité commerciale ce qui explique l'absence de fichiers 3D et de code :)
+            </p>
         </div>
     </section>
 
