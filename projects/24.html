@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>24h - Jules Biron</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
     <link rel="icon" type="image/png" href="../assets/img/logo.png">
 </head>
 <body>
@@ -27,8 +28,8 @@
 
     <section id="title" class="hero">
         <div class="container">
-            <h1 >24h de l'innovation</h1>
-            <p>Résolution d'un problème technique en équipe en 24h : Comment initialiser une éléctrification du transport routier au pays basque ?</p>
+            <h1>24h de l'innovation</h1>
+            <p>Résolution d'un problème technique en équipe en 24h : Comment initialiser une électrification du transport routier au pays basque ?</p>
             <img src="../app-24h/assets/images/elktruc.png" alt="" class="intro-img" style="width: 406px;">
         </div>
     </section>
@@ -36,33 +37,83 @@
     <section id="intro">
         <div class="container">
             <h2 class="section-title">Introduction</h2>
-            <p class="intro-text">Dans le cadre de mes études à l'<a href="https://www.estia.fr/" target="_blank">ESTIA</a>, j'ai participé au concours "<a href="https://24h.estia.fr/" target="_blank">24h de l'innovation</a>" dans le quel nous avons obtenus le prix de la meilleur innovation territorial, nous offrant ainsi la 4ème place.</p>
-            <p class="intro-text">C'est donc à la porte du podium que nous avons terminés, mais sans parler des raquettes de paddle et autres goodies, cette réelle experience hors des cadres de l'éducation "classqiue" nous à offert à moi et mes camardes connaissances, compétences et une meilleure idée des enjeux de l'ingénieur d'aujourd'hui</p>
+            <p class="intro-text">Dans le cadre de mes études à l'<a href="https://www.estia.fr/" target="_blank">ESTIA</a>, j'ai participé au concours "<a href="https://24h.estia.fr/" target="_blank">24h de l'innovation</a>" dans lequel nous avons obtenu le prix de la meilleure innovation territoriale, nous offrant ainsi la 4ème place.</p>
+            <p class="intro-text">C'est donc à la porte du podium que nous avons terminé, mais sans parler des raquettes de paddle et autres goodies, cette réelle expérience hors des cadres de l'éducation "classique" nous a offert à moi et mes camarades connaissances, compétences et une meilleure idée des enjeux de l'ingénieur d'aujourd'hui.</p>
         </div>
     </section>
     <section id="contraintes">
         <div class="container">
             <h2 class="section-title">Pistes exclues</h2>
-            <p class="intro-text">Même si des tas d'idées nous sont venues à l'esprit, certaines pistes déjà explorées n'étaient pas viables, c'est pourquoi nous les avons exlues.</p>
+            <p class="intro-text">Même si des tas d'idées nous sont venues à l'esprit, certaines pistes déjà explorées n'étaient pas viables, c'est pourquoi nous les avons exclues.</p>
             <ul class="constraints-list">
-                <li><strong>Matériel :</strong> Le Pays Basque est caractérisé par un relief montagneux et des routes sinueuses, ce qui complique l'adoption de certains véhicules électriques traditionnels.</li>
-                <li><strong>Infrastructure :</strong> Le réseau de recharge pour véhicules électriques est encore limité dans certaines zones rurales, nécessitant des solutions innovantes pour garantir une accessibilité adéquate.</li>
-                <li><strong>Économie locale :</strong> Le secteur du transport routier emploie un grand nombre de personnes dans la région. Toute solution proposée doit donc être économiquement viable et soutenir l'emploi local.</li>
-                <li><strong>Acceptation sociale :</strong> La réussite de l'initiative dépendra également de l'acceptation par les conducteurs et les entreprises de transport, qui peuvent être réticents au changement en raison des coûts initiaux ou des préoccupations concernant la performance des véhicules électriques.</li>
+                <li><strong>Routes électriques :</strong> Idée déjà largement étudiée, elles sont chères et peu pratiques.</li>
+                <li><strong>Swap Batterie :</strong> Solution complexe et coûteuse à mettre en place, nécessitant des infrastructures spécifiques.</li>
+                <li><strong>Hydrogène :</strong> Technologie encore en développement, avec des défis liés au stockage et à la distribution.</li>
             </ul>
+            <br/>
+            <p class="intro-text">Une autre contrainte cette fois posée par notre porteur de projet était de se <strong>limiter aux échanges internes au pays basque</strong>, nous ne considèrerons alors pas les flux traversant et arrivants.</p>
         </div>
     </section>
     <section id="solution">
-        <h2 class="section-title">Notre solution au problème de l'éléctrification du transport routier au pays basque</h2>
+        <h2 class="section-title">Notre solution au problème de l'électrification <br/> du transport routier au pays basque</h2>
         <div class="container">
             <p class="intro-text">Le transport routier est un secteur majeur de l'économie basque, mais il est également responsable d'une part importante des émissions de gaz à effet de serre dans la région. Pour répondre aux objectifs climatiques et améliorer la qualité de l'air, il est crucial d'initier une transition vers des solutions de transport plus durables et respectueuses de l'environnement.</p>
+            <p class="intro-text">La solution que nous avons donc retenue est assez facile à envisager et à mettre en place, et profite d'une efficacité remarquable sur le plan économique comme énergétique.</p>
+            <p class="intro-text">Elle consiste en une plateforme d'échange de cabines électriques et se résume en ces quelques points :</p>
+            <ul>
+                <li>
+                    <div class="infrastructure-content">
+                        <strong>3 Stations :</strong> Sur ces stations réparties sur le pays basque français et espagnol, proches des grands axes routiers et des zones de production d'énergie verte, nous avons prévu trois infrastructures principales :
+                    </div>
+                    <ul>
+                        <li class="infrastructure-item">
+                            <img src="../app-24h/assets/images/Rendu_Cargo.png" alt="Icône dépôt"><br/>
+                            <div class="infrastructure-content">
+                            <strong>Un Dépôt :</strong> permettant aux chauffeurs de camions de déposer de manière sécurisée leur remorque dans un box fermé par des herses et ouvrable sur scan du QR code généré par l'<a href="#app">application</a>. Un système de lumière permet d'indiquer au chauffeur où laisser sa remorque.
+                            </div>
+                        </li>
+                        <li class="infrastructure-item">
+                            <img src="../app-24h/assets/images/parking.png" alt="Icône dépôt"><br/>
+                            <div class="infrastructure-content">
+                            <strong>Une zone de recharge :</strong> Clé de voûte de notre solution, les chauffeurs viennent, posent la motrice sur une place qui est assignée par l'<a href="#app">application</a> puis récupèrent une autre motrice chargée, ce qui nous permet d'annuler un des gros points négatifs de l'électrique : le temps de charge. Les places intègre un système de lumière permettant d'identifier la place où se garer, où récupérer la nouvelle cabine, etc.</div>
+                        </li>
+                        <li class="infrastructure-item">
+                            <div class="infrastructure-content">
+                            <strong>Une zone de repos :</strong> Zone de repos pour les chauffeurs pendant leurs pauses et/ou à l'occasion de l'échange de leur cabine.</div>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Les cabines :</strong> Ce sont des cabines électriques conçues particulièrement pour cet usage avec des batteries dimensionnées et optimisées pour les trajets de transports internes au pays basque. Sans couchettes, elles sont légères et permettent alors d'embarquer un batterie plus petite pour la même autonomie.</li>
+            </ul>
         </div>
     </section>
-    <section id="conception">
-        <div class="container-full">
-            <h2 class="section-title">Conception et Réalisation</h2>
+    <section id="app">
+        <div class="container">
+            <h2 class="section-title">L'application</h2>
             <div class="conception">
-                
+                <p class="intro-text">Pour assurer la fluidité de l'échange de cabines, nous avons conçu une application mobile qui permet aux chauffeurs de camions de réserver des places de recharge et d'échange, ainsi que de suivre l'état des cabines disponibles.</p>
+                <p class="intro-text">Même si cette appliation est incomplète au vu de la quantité de travail à abattre en 24h, elle permet quand même de s'imaginer le genre d'utilisation que l'on pourrait en faire.</p>
+                <p class="intro-text">Voici les principales fonctionnalités disponible sur celle-ci :</p>
+                <ul>
+                    <li><strong>Page d'acceuil :</strong>
+                        <ul>
+                            <li>Accès à la localisation actuelle</li>
+                            <li>Sélection de la destination</li>
+                            <li>Accès à la liste des clients, mise à jour par les responsable du chauffeur.</li>
+                            <li>Pages Profil, Statistiques...</li>
+                        </ul>
+                    </li>
+                    <li><strong>Itinéraire :</strong> L'application calcul automatiquement l'itinéraire entre la position actuelle et la destination. Cet itinéraire inclu aussi les arrêts aux station Elek'truck si besoin. Ainsi que la place à la quelle l'utilisateur doit déposer sa remorque et sa motrice/cabine.</li>
+                </ul>
+            </div>
+            
+            <div class="phone-container">
+                <div class="phone">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <iframe src="../app-24h/index.html"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
