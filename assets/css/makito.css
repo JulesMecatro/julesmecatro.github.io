@@ -1,0 +1,34 @@
+.cao-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cao-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cao-grid-single {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cao-grid-single img {
+    max-width: 50%;
+}
+
+@media (max-width: 768px) {
+    .cao-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cao-grid-single img {
+        max-width: 100%;
+    }
+}
